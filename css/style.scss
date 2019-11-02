@@ -1,0 +1,81 @@
+$formPadding : 30px 30px 15px 30px;
+$formBorderRadius: 15px;
+
+body {
+    height: 100vh;
+    background-image: url('../img/background.jpg');
+    background-position: right 45%;
+    background-repeat: no-repeat;
+    background-size: 140%;
+    background-attachment: fixed;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+html {
+    font-size: 16px;
+}
+
+.form-container {
+    max-width: 390px;
+    box-shadow: 0 0.5rem 1rem 0 rgba(0,0,0,0.2);
+    .form {
+        border-radius: 0 0 $formBorderRadius $formBorderRadius;
+        background-color: #F7F7F7;
+        padding: $formPadding;
+        padding-top: 20px;
+
+        .form__input {
+            &--text{
+                font-size: 0.875rem;
+                color: #626262;
+            }
+        }
+
+        &__btn-submit {
+            color: #FFFFFF;
+            font-weight: bold;
+            width: 100%;
+            background-color: #2f559b;
+            &:hover{
+                color: #FFFFFF;
+            }
+        }
+
+        &__forgot-password {
+            padding-top: 15px;
+
+            &--text {
+                font-size: 0.75rem;
+                color: #6D6D6D;
+            }
+
+            &--pink {
+                color: #EF7277;
+            }
+        }
+    }
+
+    .form-title {
+        border-radius: $formBorderRadius $formBorderRadius 0 0;
+        padding: $formPadding;
+        padding-top: 40px;
+        height: 200px;
+        color: #FFFFFF;
+        background: rgb(86, 108, 149);
+        background: linear-gradient(270deg, rgba(86, 108, 149, 1) 0%, rgba(28, 53, 100, 1) 100%);
+        margin-bottom: 0;
+
+        h1 {
+            font-weight: bolder;
+        }
+
+        p {
+            color: #D8DBEC;
+            margin-bottom: 0;
+            font-size: 1.25rem;
+            padding-left: 1px;
+        }
+    }
+
+}
