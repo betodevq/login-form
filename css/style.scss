@@ -79,3 +79,9 @@ html {
     }
 
 }
+
+.form-control.is-valid, .was-validated .form-control:valid{
+    border-color: #ced4da !important;
+    background-image: none !important;
+    box-shadow: none !important;
+}

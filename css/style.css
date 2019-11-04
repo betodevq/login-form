@@ -76,4 +76,11 @@ html {
   font-size: 1.25rem;
   padding-left: 1px;
 }
+
+.form-control.is-valid, .was-validated .form-control:valid {
+  border-color: #ced4da !important;
+  background-image: none !important;
+  -webkit-box-shadow: none !important;
+          box-shadow: none !important;
+}
 /*# sourceMappingURL=style.css.map */
